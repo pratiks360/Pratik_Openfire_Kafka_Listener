@@ -44,7 +44,8 @@ Broker and database settings go in `src/main/resources/application.yaml`; `docs/
 
 ## 🔒 Security Notes
 
-- `docs/` contains example database-user commands with a sample password — create your own credentials and keep them out of git.
+- The MongoDB connection string is read from the `MONGO_URI` environment variable.
+- Passwords in `docs/` were replaced with placeholders; a previously committed login was purged from history — rotate it if it was ever real.
 
 ## 🛠️ Tech Stack
 
